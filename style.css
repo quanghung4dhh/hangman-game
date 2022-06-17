@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0f0e17;
+}
+.container {
+  width: 80%;
+}
+.container .header {
+  text-align: center;
+  color: #fffffe;
+}
+.container .letters {
+  display: grid;
+  height: 30vh;
+  font-size: 4.5vw;
+  width: 100%;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.letters div.special {
+  grid-column: 2 / 3;
+}
+.letters div {
+  background: #000;
+  color: #fff;
+  width: calc(80vw/7 - 3px);
+  height: calc(30vh/4 - 3px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 7px;
+  background: #ff8906;
+  color: #fffffe;
+}
+.fhint, .word, .lhint, .lives {
+  text-align: center;
+  color: #fffffe;
+  margin-bottom: 15px;
+}
+.options {
+  text-align: center;
+}
+.options button {
+  margin-top: 20px;
+  padding: 15px 25px;
+  font-size: 5vw;
+  border-radius: 10px;
+  background: #f25f4c;
+  color: #fffffe;
+  cursor: pointer;
+}
+#canvas {
+  width: 100%;
+  height: 200px;
+  background: #f1f1f1;
+  border-radius: 7px;
+}
+
+div#end {
+  position: absolute;
+  min-width: 100vw;
+  min-height: 100vh;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, .95);
+  display: none;
+}
+
+#end button {
+  margin-top: 20px;
+  padding: 15px 25px;
+  font-size: 5vw;
+  border-radius: 10px;
+  background: #f25f4c;
+  color: #fffffe;
+  cursor: pointer;
+}
+
+#end #win, #lose {
+  color: #0f0e17;
+  display: none;
+}
+
+.end_dis {
+  display: flex !important;
+}
+
+.status {
+  display: block !important;
+}

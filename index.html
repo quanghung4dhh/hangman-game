@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Javascript  -->
+  <script src="main.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>HANGMAN GAME</h2>
+      <h3>GUESS THE WORD</h3>
+    </div>
+    <div class="letters">
+      <div>A</div>
+      <div>B</div>
+      <div>C</div>
+      <div>D</div>
+      <div>E</div>
+      <div>F</div>
+      <div>G</div>
+      <div>H</div>
+      <div>I</div>
+      <div>J</div>
+      <div>K</div>
+      <div>L</div>
+      <div>M</div>
+      <div>N</div>
+      <div>O</div>
+      <div>P</div>
+      <div>Q</div>
+      <div>R</div>
+      <div>S</div>
+      <div>T</div>
+      <div>U</div>
+      <div class="special">V</div>
+      <div>W</div>
+      <div>X</div>
+      <div>Y</div>
+      <div>Z</div>
+    </div>
+    <div class="fhint"></div>
+    <div class="word"></div>
+    <div class="lhint"></div>
+    <div class="lives">Lives: <span>10</span></div>
+    <div class="hangman">
+      <canvas id="canvas"></canvas>
+    </div>
+    <div class="result"></div>
+    <div class="options">
+      <button id="lhint">Hint</button><br />
+      <button class="again">Play Again</button>
+    </div>
+  </div>
+  <div id="end">
+    <h1 id="win">YOU WIN!</h1>
+    <h1 id="lose">YOU LOSE!</h1>
+    <button class="again">Play Again</button>
+  </div>
+</body>
+</html>
